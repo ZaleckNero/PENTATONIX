@@ -1,0 +1,343 @@
+<!doctype html>
+<html class="no-touch no-js" lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../assets/LogoSite.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/index.css" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PENTATONIX</title>
+</head>
+
+<body>
+
+    <div id="shopify-section-header" class="shopify-section header-section">
+        <header class="site-header" role="banner" data-section-id="header" data-section-type="header-section">
+            <div class="wrapper">
+                <div class="grid--full">
+                    <div class="grid-item large--one-half" ;>
+                        <h1 class="header-logo" itemscope itemtype="">
+                            <a href="index.html" itemprop="url">
+                                <img src="../assets/logo.png" alt="PENTATONIX" itemprop="logo">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="grid-item large--one-half text-center large--text-right">
+                        <div class="site-header--text-links medium-down--hide">
+                        </div>
+                        <br class="medium-down--hide">
+                        <form action="/search" method="get" class="search-bar" role="search">
+                            <input type="hidden" name="type" value="product">
+
+                            <input type="search" name="q" value="" placeholder="Search here..."
+                                aria-label="Search here...">
+                            <div class="searchbar">
+                                <button type="submit">
+                                    <img src="../assets/search1.png" alt="text">
+                                </button>
+                            </div>
+                        </form>
+        </header>
+
+        <nav class="nav-bar" role="navigation">
+            <div class="wrapper">
+                <form action="/search" method="get" class="search-bar" role="search">
+                    <input type="hidden" name="type" value="product">
+                    <input type="search" name="q" value="" placeholder="Search all products..."
+                        aria-label="Search all products...">
+                </form>
+
+                <ul class="site-nav" id="accessibleNav">
+                    <style>
+                        @font-face {
+                            font-family: 'FontA1';
+                src: url('../assets/RugenExpanded.ttf') format('truetype');
+                        a {
+                            font-family: 'FontA1';
+                            font-size: 23px;
+
+                        }
+                    </style>
+
+                    <li class="site-nav--active">
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li class="site-nav--has-dropdown" aria-haspopup="true">
+                        <a>CATALOG<span class="icon-fallback-text">
+                                <span class="icon icon-arrow-down" aria-hidden="true"></span>
+                            </span>
+                        </a>
+                        <ul class="site-nav--dropdown">
+                            <li>
+                                <ul class="grandchild">
+                                    <li><a href="#1" onclick="scrollAndHighlight('1')">Stratocaster</a></li>
+                                    <li><a href="#2" onclick="scrollAndHighlight('2')">Telecaster</a></li>
+                                    <li><a href="#3" onclick="scrollAndHighlight('3')">Jazzmaster</a></li>
+                                    <li><a href="#4" onclick="scrollAndHighlight('4')">Jaguar</a></li>
+                                    <li><a href="#5" onclick="scrollAndHighlight('5')">Mustang</a></li>
+                                    <li><a href="#6" onclick="scrollAndHighlight('6')">Starcaster</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <main class="wrapper main-content" style="background-color: #000" role="main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+  <img src="../assets/slider 3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../assets/slider 2A.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../assets/slider 1.png" style="width:100%">
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+            <main>
+                <section>
+
+                    <h2>Featured Products</h2>
+                    <section class="main">
+                        <div class="product" id="3">
+                            <img src="../assets/jazz2.png" alt="Product Image">
+                            <div class="product-price">
+                                <h3>Squier Classic Vibe 60's Jazzmaster</h3>
+                                <div class="product-info">
+                                    <p>The Classic Vibe ‘60s Jazzmaster® is a faithful and striking homage to the iconic
+                                        Fender favorite, producing undeniable Jazzmaster tone courtesy of its dual
+                                        Fender-Designed alnico single-coil pickups.‎‎</p>
+                                    <div class="product-price">
+                                        <p class="price">₱ 36,950.00</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product" id="1">
+                            <img src="../assets/strat.jpeg" alt="Product Image">
+                            <div class="product-price">
+                                <h3>Fender Vintera 60's Stratocaster</h3>
+                                <div class="product-info">
+                                    <p>For players who want the style and sound of Fender’s golden era, we created the
+                                        Vintera® ‘60s Stratocaster®. Equipped with the coveted features that defined the
+                                        decade—including period-accurate neck profile and playing feel, along with
+                                        re-voiced pickups—this guitar has all of the chime and articulation that made
+                                        the Stratocaster a legend.</p>
+                                    <div class="product-price">
+                                        <p class="price">₱ 69,950.00</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product" id="5">
+                            <img src="../assets/mustang.jpeg" alt="Product Image">
+                            <div class="product-price">
+                                <h3>Fender Vintera '60s Mustang</h3>
+                                <div class="product-info">
+                                    <p>For players who crave the style and sound of Fender's golden era, we created the
+                                        Vintera '60s Mustang. Equipped with the coveted features that defined the decade
+                                        including period-accurate neck profile and playing feel, along with re-voiced
+                                        pickups - this guitar has all of the punch and style that made the Mustang a
+                                        legend. </p>
+                                    <div class="product-price">
+                                        <p class="price">₱ 62,950.00</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product" id="2">
+                            <img src="../assets/tele.jpeg" alt="Product Image">
+                            <div class="product-price">
+                                <h3>Fender Vintera '60s Telecaster Bigsby</h3>
+                                <div class="product-info">
+                                    <p>For players who want the style and sound of Fender’s classic years, we created
+                                        the Vintera ‘60s Telecaster Bigsby. Equipped with the coveted features that
+                                        defined the decade—including period-accurate neck profile, re-voiced pickups and
+                                        cool-looking Bigsby tremolo—this guitar has all of the growl and twang that made
+                                        the Telecaster a legend.</p>
+                                    <div class="product-price">
+                                        <p class="price">₱ 62,990.00</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product" id="4">
+                            <img src="../assets/jaguar.jpeg" alt="Product Image">
+                            <div class="product-price">
+                                <h3>Fender Vintera '60s Jaguar</h3>
+                                <div class="product-info">
+                                    <p>For players who want the style and sound of Fender’s golden era, we created the
+                                        Vintera ‘60s Jaguar. Equipped with the coveted features that defined the
+                                        decade—including period-accurate neck profile and playing feel, along with
+                                        recreated vintage-style pickups—this guitar has all of the “round”, yet bold,
+                                        tone that made the Jaguar a legend.</p>
+                                    <div class="product-price">
+                                        <p class="price">₱ 69,950.00</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product" id="6">
+                            <img src="../assets/starcaster.jpeg" alt="Product Image">
+                            <div class="product-price">
+                                <h3>Squier Classic Vibe Starcaster</h3>
+                                <div class="product-info">
+                                    <p>The Starcaster has long turned heads with its part semi-hollowbody, part offset
+                                        construction. The Squier Classic Vibe Starcaster comes equipped with vintage
+                                        appointments such as Fender-designed wide-range humbucking pickups, 3-way pickup
+                                        selector switch, double-bound body, and classic Starcaster headstock.</p>
+                                    <div class="product-price">
+                                        <p class="price">₱ 38,950.00</p>
+                                        <button>Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </main>
+
+            <script>
+                function scrollAndHighlight(elementId) {
+                    // Remove highlight from all products
+                    var allProducts = document.querySelectorAll('.product');
+                    allProducts.forEach(function (product) {
+                        product.classList.remove('highlighted');
+                    });
+
+                    // Get the product to highlight
+                    var productToHighlight = document.getElementById(elementId);
+
+                    // Scroll to the product
+                    productToHighlight.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+
+                    // Add a class to highlight the product
+                    productToHighlight.classList.add('highlighted');
+                }
+            </script>
+
+
+
+            <div id="shopify-section-footer" class="shopify-section footer-section">
+                <footer class="site-footer small--text-center" role="contentinfo">
+                    <div class="wrapper">
+                        <div class="grid">
+                            <div class="grid-item small--one-whole one-quarter">
+                                <h3>Get in touch</h3>
+                                <p>Mobile: 0912345678</p>
+                                <p>Email: <a href="">Loremipsum@gmail.com</a> </p>
+                            </div>
+
+
+                            <div class="grid-item small--one-whole one-third">
+                                <div class="form-vertical">
+                                    <form method="post" action="/contact#contact_form" id="contact_form"
+                                        accept-charset="UTF-8" class="contact-form"><input type="hidden"
+                                            name="form_type" value="customer" /><input type="hidden" name="utf8"
+                                            value="✓" />
+                                        <input type="hidden" name="contact[tags]" value="newsletter">
+                                        <div class="input-group">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="hr--small">
+                    <div class="grid">
+                        <div class="grid-item large--two-fifths">
+                            <ul class="legal-links inline-list">
+                                <li>
+                                    &copy; 2023 <a href="/" title="">PENTATONIX</a>
+                                </li>
+                                <li>
+                                    Made by <a>idk what group</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grid-item large--three-fifths large--text-right">
+                            <ul class="inline-list payment-icons">
+                                <li>
+                                    <span class="icon-fallback-text">
+                                        <span class="icon icon-paypal" aria-hidden="true"></span>
+                                        <span class="fallback-text">Thank You</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            </footer>
+</body>
+
+</html>
